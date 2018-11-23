@@ -17,6 +17,7 @@ body {
 
 body {
   color: #262626;
+  font-family: "Titillium Web",sans-serif;
 }
 
 .flex-container {
@@ -29,7 +30,6 @@ body {
 
 main {
   margin: 0 auto;
-  width: 100vw;
 }
 
 button {
@@ -106,6 +106,8 @@ header .nav-container .header-buttons button:nth-child(1) {
 
 #hero {
   background-image: url("../images/slider-doctor-01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   position: relative;
   z-index: -1;
