@@ -2,7 +2,11 @@
 
 $red: #da0067;
 $purple: #7600da;
+$black: #262626;
 
+body{
+    color: $black;
+}
 .flex-container{
     display: flex;
     flex-wrap: wrap;
@@ -24,13 +28,17 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
 }
 
 
 header{
+    position: fixed;
     padding: 1.65rem 2.3rem;
     width:100%;
     justify-content: space-between;
+    z-index: 3;
+    background-color: #fff;
     .nav-container{
         // width: 100%;
         margin: 0 5%;
@@ -51,7 +59,11 @@ header{
                     padding: 15px;
                     a{
                         text-decoration: none;
-                        color: black;
+                        color: $black;
+                        font-weight: bold;
+                        &:hover{
+                            color:$red;
+                        }
                         i{
                            vertical-align: bottom; 
                         }
@@ -68,5 +80,46 @@ header{
                 background-color: $purple;
             }
         }  
+    }
+}
+
+#hero{
+    background-image: url("../images/slider-doctor-01.jpg");
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    .hero-slide{
+        background-color: #fff;
+        margin: 0;
+        padding: 4%;
+        width: 40%;
+        position: absolute;
+        left:8%;
+        top: 25%;
+        h2{
+            font-size: 6rem;
+            margin: 0;
+            span{
+                color: $red;
+            }
+        }
+        h3{
+            margin:0;
+            font-size: 2rem;
+            font-weight: 300;
+            &::after{
+                content: '';
+                width: 73px;
+                height: 3px;
+                background-color: lightgray;
+                display: block;
+                margin-top: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+        p{
+            font-size: 1.5rem;
+            padding-top: 1.5rem;
+        }
     }
 }

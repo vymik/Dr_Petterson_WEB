@@ -15,6 +15,10 @@ body {
   margin: 0 auto;
 }
 
+body {
+  color: #262626;
+}
+
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,14 +42,18 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  cursor: pointer;
 }
 
 header {
+  position: fixed;
   padding: 1.65rem 2.3rem;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 3;
+  background-color: #fff;
 }
 
 header .nav-container {
@@ -75,7 +83,12 @@ header .nav-container nav ul li {
 
 header .nav-container nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #262626;
+  font-weight: bold;
+}
+
+header .nav-container nav ul li a:hover {
+  color: #da0067;
 }
 
 header .nav-container nav ul li a i {
@@ -89,5 +102,52 @@ header .nav-container .header-buttons button {
 
 header .nav-container .header-buttons button:nth-child(1) {
   background-color: #7600da;
+}
+
+#hero {
+  background-image: url("../images/slider-doctor-01.jpg");
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+}
+
+#hero .hero-slide {
+  background-color: #fff;
+  margin: 0;
+  padding: 4%;
+  width: 40%;
+  position: absolute;
+  left: 8%;
+  top: 25%;
+}
+
+#hero .hero-slide h2 {
+  font-size: 6rem;
+  margin: 0;
+}
+
+#hero .hero-slide h2 span {
+  color: #da0067;
+}
+
+#hero .hero-slide h3 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+#hero .hero-slide h3::after {
+  content: '';
+  width: 73px;
+  height: 3px;
+  background-color: lightgray;
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#hero .hero-slide p {
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
