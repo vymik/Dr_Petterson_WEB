@@ -1,8 +1,19 @@
 @import 'reset';
-
+// colors
 $red: #da0067;
 $purple: #7600da;
 $black: #262626;
+$gray: #9693a2;
+
+@mixin underline{
+    content: '';
+    width: 73px;
+    height: 3px;
+    background-color: lightgray;
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;  
+}
 
 body{
     color: $black;
@@ -40,12 +51,9 @@ header{
     z-index: 3;
     background-color: #fff;
     .nav-container{
-        // width: 100%;
         margin: 0 5%;
         justify-content: space-between;
         align-items: center;
-        // line-height: 32px;
-        // vertical-align: middle;
         p{
             margin:0;
             padding-left: 5px;
@@ -108,18 +116,48 @@ header{
             font-size: 2rem;
             font-weight: 300;
             &::after{
-                content: '';
-                width: 73px;
-                height: 3px;
-                background-color: lightgray;
-                display: block;
-                margin-top: 1.5rem;
-                margin-bottom: 1.5rem;
+                @include underline;
             }
         }
         p{
             font-size: 1.5rem;
             padding-top: 1.5rem;
+        }
+    }
+}
+
+#features{
+    width: 100%;
+    // padding: 10%;
+    // margin: 0 auto;
+    .columns-container{
+        padding: 10% 0;
+        width: 70%;
+        margin:0 auto;
+        justify-content: space-between;
+        .column{
+            width: 28%;
+            padding: 5%;
+            text-align: center;
+            box-shadow: 0px 0px 77px 0px rgba(125,116,125,1);
+            i{
+                font-size: 5rem;
+                background: linear-gradient(to right, $red 0%, $purple 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            h3{
+                font-size: 1.5rem;
+                &::after{
+                    @include underline;
+                    margin: 1.5rem auto;
+                }
+            }    
+            p{
+                font-size: 1.1rem;
+                color: $gray;
+                padding-bottom: 5%;
+            }
         }
     }
 }
