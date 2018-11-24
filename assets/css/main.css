@@ -183,6 +183,7 @@ header .nav-container .header-buttons button:nth-child(1) {
   background: -webkit-gradient(linear, left top, right top, from(#da0067), to(#7600da));
   background: linear-gradient(to right, #da0067 0%, #7600da 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
