@@ -4,6 +4,7 @@ $red: #da0067;
 $purple: #7600da;
 $black: #262626;
 $gray: #9693a2;
+$shadow: 0px 0px 25px 0px rgba(214,201,214,1);
 
 @mixin underline{
     content: '';
@@ -41,6 +42,10 @@ button {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+    transition: 0.2s all linear;
+    &:hover{
+        background-color: $purple;
+    }
 }
 
 
@@ -147,7 +152,7 @@ header{
             width: 30%;
             padding: 5%;
             text-align: center;
-            box-shadow: 0px 0px 25px 0px rgba(214,201,214,1);
+            box-shadow: $shadow;
             i{
                 font-size: 5rem;
                 background: linear-gradient(to right, $red 0%, $purple 100%);
@@ -187,11 +192,6 @@ header{
             border-radius: 50%;
             border: 1px solid white;
             margin-right: 5%;
-            .play-button{
-                stroke-dashoffset: 0;
-                opacity: 1;
-                stroke: #f8aa28;
-            }
         }
         h3{
             color: white;
@@ -210,8 +210,8 @@ header{
         padding: 4%;
         position: relative;
         right: 0;
-        top: 100px;
-        border: 1px solid $gray;
+        top: 130px;
+        box-shadow: $shadow;
         h2{
             font-size: 5rem;
             margin: 0;
@@ -239,6 +239,94 @@ header{
             p{
                 margin: 0;
                 font-weight: bold;
+            }
+        }
+    }
+}
+
+#about{
+    width: 100%;
+    padding: 7% 0;
+    .centered{
+        justify-content: space-between;
+    }
+
+    .about-column1{
+        width: 45%;
+        background-image: url("../images/bg-doctor-2.jpg");
+        background-size: cover;
+        padding: 5%;
+        color: white;
+        h2{
+            font-size: 4rem;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin:0;
+            &::after{
+                @include underline;
+                background-color: #fff;
+            }
+        }
+        p{
+            font-size: 1.4rem;
+        }
+        .testimonial-footer{
+            .img-container{
+                width:30%;
+                align-items: center;
+                .circle-border{
+                    width: 30px;
+                    height: 30px;
+                    margin: 2%;
+                    background-image: url("../images/1testim-150x150.jpg");
+                    background-size: cover;
+                    border-radius: 50%;
+                    opacity: 0.7;
+                    &:nth-child(2){
+                        opacity: 1;
+                    }
+                }
+            }
+            p{
+              font-size: 1rem;
+              font-weight: 700;  
+            }
+        }
+    }
+    .about-column2{
+        width: 50%;
+        justify-content: space-between;
+        .card{
+            margin-top: 10%;
+            width: 45%;
+            text-align: center;
+            padding: 5%;
+            box-shadow: $shadow;
+            i{
+                font-size: 5rem;
+                background: linear-gradient(to right, $red 0%, $purple 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            h3{
+                font-size: 1.5rem;
+                &::after{
+                    @include underline;
+                    margin: 1.5rem auto;
+                }
+            }    
+            p{
+                font-size: 1.1rem;
+                color: $gray;
+                padding-bottom: 5%;
+            }
+            button{
+                background: none;
+                color: $red;
+                &:hover{
+                    color: $purple;
+                }
             }
         }
     }
