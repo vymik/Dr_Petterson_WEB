@@ -45,6 +45,7 @@ button {
   cursor: pointer;
   -webkit-transition: 0.2s all linear;
   transition: 0.2s all linear;
+  text-transform: capitalize;
 }
 
 button:hover {
@@ -533,5 +534,117 @@ header .nav-container .header-buttons button:nth-child(1) {
   text-transform: capitalize;
   font-size: 1.2rem;
   font-weight: 700;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#services .container a:hover {
+  color: #7600da;
+}
+
+#prolong {
+  padding: 5% 0;
+  background-image: url("../images/bg-doctor-3.jpg");
+  background-size: cover;
+}
+
+#prolong .centered {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#prolong .prolong-column1 {
+  width: 45%;
+  padding: 4% 5%;
+  background-color: #fff;
+}
+
+#prolong .prolong-column1 h2 {
+  font-size: 5rem;
+  margin: 0;
+  text-transform: capitalize;
+  line-height: 5rem;
+}
+
+#prolong .prolong-column1 h3 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+#prolong .prolong-column1 h3::after {
+  content: '';
+  width: 73px;
+  height: 3px;
+  background-color: lightgray;
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#prolong .prolong-column1 p {
+  font-size: 1.1rem;
+  color: #9693a2;
+}
+
+#prolong .prolong-column2 {
+  width: 50%;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+#prolong .prolong-column2 .card {
+  width: 100%;
+  height: 46%;
+  background-color: #fff;
+}
+
+#prolong .prolong-column2 .card .left-img {
+  width: 35%;
+  background-image: url("../images/05-500x500.jpg");
+  background-size: cover;
+}
+
+#prolong .prolong-column2 .card .right-text {
+  width: 65%;
+  padding: 4%;
+}
+
+#prolong .prolong-column2 .card .right-text h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+#prolong .prolong-column2 .card .right-text h3::after {
+  content: '';
+  width: 73px;
+  height: 3px;
+  background-color: lightgray;
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#prolong .prolong-column2 .card .right-text .card-footer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#prolong .prolong-column2 .card .right-text .card-footer a {
+  text-decoration: none;
+  color: #9693a2;
+}
+
+#prolong .prolong-column2 .card .right-text button {
+  background: none;
+  color: #da0067;
+  padding-left: 0;
+  font-weight: bold;
+}
+
+#prolong .prolong-column2 .card .right-text button:hover {
+  color: #7600da;
 }
 /*# sourceMappingURL=main.css.map */
