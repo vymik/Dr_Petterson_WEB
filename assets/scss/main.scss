@@ -336,7 +336,7 @@ header{
         }
     }
 }
-
+#prices,
 #services{
     .container{
         text-align: center;
@@ -387,6 +387,11 @@ header{
                         bottom: -2.5rem;
                         line-height: 5rem;
                         transition: all 0.5s ease-in-out;
+                        span{
+                            font-size: 2rem;
+                            vertical-align: top;
+                            line-height: 3.5rem;
+                        }
                     }
                 }
                 h3{
@@ -490,6 +495,41 @@ header{
                         color: $purple;
                     }
                 }               
+            }
+        }
+    }
+}
+
+#prices{
+    .container{
+        padding-top: 5%;
+        .columns-container{
+            .column{
+                .bg-img{
+                    background-image: url("../images/price_bg_1.jpg");
+                    p{
+                        bottom: -0.6rem;
+                        line-height: 4rem;
+                        font-size: 4rem;
+                    }
+                }
+                &:nth-child(2){
+                    .bg-img{
+                        background-image: url("../images/price_bg_2.jpg");
+                    }
+                }
+                &:nth-child(3){
+                    .bg-img{
+                        background-image: url("../images/price_bg_3.jpg");
+                    }
+                }
+                p{
+                    margin: 0;
+                    padding: 0;
+                }
+                button{
+                    margin-top: 8%;
+                }
             }
         }
     }

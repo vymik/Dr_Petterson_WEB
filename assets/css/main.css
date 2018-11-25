@@ -429,21 +429,25 @@ header .nav-container .header-buttons button:nth-child(1) {
   color: #7600da;
 }
 
+#prices .container,
 #services .container {
   text-align: center;
 }
 
+#prices .container h2,
 #services .container h2 {
   font-size: 5rem;
   margin: 0;
 }
 
+#prices .container h3,
 #services .container h3 {
   font-size: 3rem;
   font-weight: 300;
   margin: 0;
 }
 
+#prices .container h3::after,
 #services .container h3::after {
   content: '';
   width: 73px;
@@ -455,10 +459,12 @@ header .nav-container .header-buttons button:nth-child(1) {
   margin: 1.5rem auto;
 }
 
+#prices .container .columns-container,
 #services .container .columns-container {
   padding-top: 2%;
 }
 
+#prices .container .columns-container .column,
 #services .container .columns-container .column {
   width: 30%;
   padding-top: 0;
@@ -467,6 +473,7 @@ header .nav-container .header-buttons button:nth-child(1) {
           box-shadow: 0px 0px 25px 0px #d6c9d6;
 }
 
+#prices .container .columns-container .column .bg-img,
 #services .container .columns-container .column .bg-img {
   background-image: url("../images/01.jpg");
   background-size: cover;
@@ -478,14 +485,17 @@ header .nav-container .header-buttons button:nth-child(1) {
   transition: all 0.5s ease-in-out;
 }
 
+#prices .container .columns-container .column .bg-img:hover,
 #services .container .columns-container .column .bg-img:hover {
   opacity: 0.7;
 }
 
+#prices .container .columns-container .column .bg-img:hover p,
 #services .container .columns-container .column .bg-img:hover p {
   bottom: 30%;
 }
 
+#prices .container .columns-container .column .bg-img p,
 #services .container .columns-container .column .bg-img p {
   margin: 0;
   padding: 0;
@@ -502,12 +512,21 @@ header .nav-container .header-buttons button:nth-child(1) {
   transition: all 0.5s ease-in-out;
 }
 
+#prices .container .columns-container .column .bg-img p span,
+#services .container .columns-container .column .bg-img p span {
+  font-size: 2rem;
+  vertical-align: top;
+  line-height: 3.5rem;
+}
+
+#prices .container .columns-container .column h3,
 #services .container .columns-container .column h3 {
   font-size: 1.5rem;
   font-weight: 700;
   padding-top: 5%;
 }
 
+#prices .container .columns-container .column h3::after,
 #services .container .columns-container .column h3::after {
   content: '';
   width: 73px;
@@ -519,12 +538,14 @@ header .nav-container .header-buttons button:nth-child(1) {
   margin: 1.5rem auto;
 }
 
+#prices .container .columns-container .column p,
 #services .container .columns-container .column p {
   font-size: 1.1rem;
   color: #9693a2;
   padding-bottom: 5%;
 }
 
+#prices .container a,
 #services .container a {
   margin-top: 5%;
   margin-left: 50%;
@@ -539,6 +560,7 @@ header .nav-container .header-buttons button:nth-child(1) {
   transition: all 0.3s linear;
 }
 
+#prices .container a:hover,
 #services .container a:hover {
   color: #7600da;
 }
@@ -646,5 +668,36 @@ header .nav-container .header-buttons button:nth-child(1) {
 
 #prolong .prolong-column2 .card .right-text button:hover {
   color: #7600da;
+}
+
+#prices .container {
+  padding-top: 5%;
+}
+
+#prices .container .columns-container .column .bg-img {
+  background-image: url("../images/price_bg_1.jpg");
+}
+
+#prices .container .columns-container .column .bg-img p {
+  bottom: -0.6rem;
+  line-height: 4rem;
+  font-size: 4rem;
+}
+
+#prices .container .columns-container .column:nth-child(2) .bg-img {
+  background-image: url("../images/price_bg_2.jpg");
+}
+
+#prices .container .columns-container .column:nth-child(3) .bg-img {
+  background-image: url("../images/price_bg_3.jpg");
+}
+
+#prices .container .columns-container .column p {
+  margin: 0;
+  padding: 0;
+}
+
+#prices .container .columns-container .column button {
+  margin-top: 8%;
 }
 /*# sourceMappingURL=main.css.map */
