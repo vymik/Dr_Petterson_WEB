@@ -46,6 +46,7 @@ button {
   -webkit-transition: 0.2s all linear;
   transition: 0.2s all linear;
   text-transform: capitalize;
+  font-weight: bold;
 }
 
 button:hover {
@@ -641,7 +642,6 @@ header .nav-container .header-buttons button:nth-child(1) {
   background: none;
   color: #da0067;
   padding-left: 0;
-  font-weight: bold;
 }
 
 #prolong .prolong-column2 .card .right-text button:hover {

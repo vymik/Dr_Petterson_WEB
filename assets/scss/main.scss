@@ -44,6 +44,7 @@ button {
     cursor: pointer;
     transition: 0.2s all linear;
     text-transform: capitalize;
+    font-weight: bold;
     &:hover{
         background-color: $purple;
     }
@@ -485,7 +486,6 @@ header{
                     background:none;
                     color: $red;
                     padding-left: 0;
-                    font-weight: bold;
                     &:hover{
                         color: $purple;
                     }
