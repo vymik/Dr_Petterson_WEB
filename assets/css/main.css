@@ -442,17 +442,20 @@ header .nav-container .header-buttons button:nth-child(1) {
   color: #7600da;
 }
 
+#partners .container,
 #prices .container,
 #services .container {
   text-align: center;
 }
 
+#partners .container h2,
 #prices .container h2,
 #services .container h2 {
   font-size: 5rem;
   margin: 0;
 }
 
+#partners .container h3,
 #prices .container h3,
 #services .container h3 {
   font-size: 3rem;
@@ -460,6 +463,7 @@ header .nav-container .header-buttons button:nth-child(1) {
   margin: 0;
 }
 
+#partners .container h3::after,
 #prices .container h3::after,
 #services .container h3::after {
   content: '';
@@ -472,11 +476,13 @@ header .nav-container .header-buttons button:nth-child(1) {
   margin: 1.5rem auto;
 }
 
+#partners .container .columns-container,
 #prices .container .columns-container,
 #services .container .columns-container {
   padding-top: 2%;
 }
 
+#partners .container .columns-container .column,
 #prices .container .columns-container .column,
 #services .container .columns-container .column {
   width: 30%;
@@ -486,6 +492,7 @@ header .nav-container .header-buttons button:nth-child(1) {
           box-shadow: 0px 0px 25px 0px #d6c9d6;
 }
 
+#partners .container .columns-container .column .bg-img,
 #prices .container .columns-container .column .bg-img,
 #services .container .columns-container .column .bg-img {
   background-image: url("../images/01.jpg");
@@ -498,16 +505,19 @@ header .nav-container .header-buttons button:nth-child(1) {
   transition: all 0.5s ease-in-out;
 }
 
+#partners .container .columns-container .column .bg-img:hover,
 #prices .container .columns-container .column .bg-img:hover,
 #services .container .columns-container .column .bg-img:hover {
   opacity: 0.7;
 }
 
+#partners .container .columns-container .column .bg-img:hover p,
 #prices .container .columns-container .column .bg-img:hover p,
 #services .container .columns-container .column .bg-img:hover p {
   bottom: 30%;
 }
 
+#partners .container .columns-container .column .bg-img p,
 #prices .container .columns-container .column .bg-img p,
 #services .container .columns-container .column .bg-img p {
   margin: 0;
@@ -525,6 +535,7 @@ header .nav-container .header-buttons button:nth-child(1) {
   transition: all 0.5s ease-in-out;
 }
 
+#partners .container .columns-container .column .bg-img p span,
 #prices .container .columns-container .column .bg-img p span,
 #services .container .columns-container .column .bg-img p span {
   font-size: 2rem;
@@ -532,6 +543,7 @@ header .nav-container .header-buttons button:nth-child(1) {
   line-height: 3.5rem;
 }
 
+#partners .container .columns-container .column h3,
 #prices .container .columns-container .column h3,
 #services .container .columns-container .column h3 {
   font-size: 1.5rem;
@@ -539,6 +551,7 @@ header .nav-container .header-buttons button:nth-child(1) {
   padding-top: 5%;
 }
 
+#partners .container .columns-container .column h3::after,
 #prices .container .columns-container .column h3::after,
 #services .container .columns-container .column h3::after {
   content: '';
@@ -551,6 +564,7 @@ header .nav-container .header-buttons button:nth-child(1) {
   margin: 1.5rem auto;
 }
 
+#partners .container .columns-container .column p,
 #prices .container .columns-container .column p,
 #services .container .columns-container .column p {
   font-size: 1.1rem;
@@ -558,6 +572,7 @@ header .nav-container .header-buttons button:nth-child(1) {
   padding-bottom: 5%;
 }
 
+#partners .container a,
 #prices .container a,
 #services .container a {
   margin-top: 5%;
@@ -573,6 +588,7 @@ header .nav-container .header-buttons button:nth-child(1) {
   transition: all 0.3s linear;
 }
 
+#partners .container a:hover,
 #prices .container a:hover,
 #services .container a:hover {
   color: #7600da;
@@ -780,5 +796,15 @@ header .nav-container .header-buttons button:nth-child(1) {
 #appointment .centered .trust-column2 label {
   color: #9693a2;
   font-size: 1.1rem;
+}
+
+#partners {
+  padding-top: 5%;
+}
+
+#partners .container .columns-container .column {
+  display: block;
+  width: 22%;
+  padding: 3%;
 }
 /*# sourceMappingURL=main.css.map */

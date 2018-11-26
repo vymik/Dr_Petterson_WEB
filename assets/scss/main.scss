@@ -336,6 +336,7 @@ header{
         }
     }
 }
+#partners,
 #prices,
 #services{
     .container{
@@ -572,6 +573,18 @@ header{
             label{
                 color: $gray;
                 font-size: 1.1rem;
+            }
+        }
+    }
+}
+#partners{
+    padding-top: 5%;
+    .container{
+        .columns-container{
+            .column{
+                display: block;
+                width: 22%;
+                padding: 3%;
             }
         }
     }
