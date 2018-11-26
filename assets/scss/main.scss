@@ -180,7 +180,7 @@ header{
         }
     
 }
-
+#appointment,
 #trust{
     width: 100%;
     background-image: url("../images/bg-doctor-1.jpg");
@@ -507,6 +507,7 @@ header{
             .column{
                 .bg-img{
                     background-image: url("../images/price_bg_1.jpg");
+                    height: 150px;
                     p{
                         bottom: -0.6rem;
                         line-height: 4rem;
@@ -530,6 +531,47 @@ header{
                 button{
                     margin-top: 8%;
                 }
+            }
+        }
+    }
+}
+
+#appointment{
+    background-image: url("../images/bg-doctor-4.jpg");
+    height: auto;
+    .centered{
+        padding: 5% 0;
+        .trust-column2{
+            top: 0;
+            box-shadow: none;
+            .contacts{
+                justify-content: space-between;
+                input{
+                    margin-bottom: 5%;
+                    font-size: 1.1rem;
+                    width: 30%;
+                    padding: 1%;
+                    border-radius: 3px;
+                }
+            }
+            textarea{
+                width: 100%;
+                padding: 1%;
+                border-radius: 3px;
+                font-size: 1.1rem;
+            }
+            ::placeholder{
+                // opacity: 1;
+                color: $black;
+                font-weight: 700;
+            }
+            input[type="checkbox"]{
+                margin: 3% 0;
+                transform: scale(1.3);
+            }
+            label{
+                color: $gray;
+                font-size: 1.1rem;
             }
         }
     }
